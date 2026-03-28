@@ -66,7 +66,7 @@
                 placeholder="00 000-00-00" autocomplete="tel">
             </div>
           </div>
-          <button class="hero__btn" id="open"><img src="./images/hero/submit.svg" alt="submit" width="19" height="26"
+          <button class="btn" id="open"><img src="./images/hero/submit.svg" alt="submit" width="19" height="26"
               loading="lazy" decoding="async">Ro’yxatdan o’tish</button>
         </form>
       </div>
@@ -118,6 +118,90 @@
     </div>
   </section>
 
+  <section class="result">
+    <h2 class="result__title">O'QUVCHILARIM NATIJALARI</h2>
+    
+    <div class="result__container">
+        <div class="result__card">
+            <div class="result__video-wrapper" onclick="playResultVideo(this, './images/result/result__1.mov')">
+                <img src="./images/result/result__img__1.avif" class="result__poster">
+                <div class="result__play-btn">
+                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+                </div>
+                <video class="result__video" playsinline></video>
+            </div>
+            <p class="result__text">Rus tilini bilish darajam <br> kundan-kunga oshmoqda</p>
+        </div>
+        <div class="result__card">
+            <div class="result__video-wrapper" onclick="playResultVideo(this, './images/result/result__2.mov')">
+                <img src="./images/result/result__img__2.avif" class="result__poster">
+                <div class="result__play-btn">
+                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+                </div>
+                <video class="result__video" playsinline></video>
+            </div>
+            <p class="result__text">Grammatika va rus tilida erkin <br> gaplashishni tez o'rgandim</p>
+        </div>
+        <div class="result__card">
+            <div class="result__video-wrapper" onclick="playResultVideo(this, './images/result/result__3.mov')">
+                <img src="./images/result/result__img__3.avif" class="result__poster"   >
+                <div class="result__play-btn">
+                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+                </div>
+                <video class="result__video" playsinline></video>
+            </div>
+            <p class="result__text">Kurs amaliyotlar bilan boshlangani <br> sababli tezroq o’rgandim</p>
+        </div>
+    </div>
+
+    
+    <button class="hero__btn" id="open"><img src="./images/hero/submit.svg" alt="submit" width="19" height="26"
+        loading="lazy" decoding="async">Ro’yxatdan o’tish</button>
+</section>
+
+  <div class="video-section">
+    <div class="video-card" onclick="playMe(this, './images/videos/vd_1.mp4')">
+      <img src="./images/videos/images__1.avif" class="video-poster">
+      <div class="play-btn">
+        <svg viewBox="0 0 24 24">
+          <path d="M8 5v14l11-7z" />
+        </svg>
+      </div>
+      <p class="video-text">Odamlar bilan rus tilida gaplashish <br> katta muammo edi. Hozir erkin <br> qo’rqmasdan
+        gaplashyapman</p>
+      <video class="card-video" playsinline muted></video>
+    </div>
+
+    <div class="video-card" onclick="playMe(this, './images/videos/vd_2.mp4')">
+      <img src="./images/videos/images__2.avif" class="video-poster">
+      <div class="play-btn">
+        <svg viewBox="0 0 24 24">
+          <path d="M8 5v14l11-7z" />
+        </svg>
+      </div>
+      <p class="video-text">Kurs odatiy kurslardan katta farq <br> qiladi. Chunki bu yerda kurator bor <br> har doim
+        manga yordam berdi. Ular <br> bilan vazifalarni tushunib bajardim </p>
+      <video class="card-video" playsinline muted></video>
+    </div>
+
+    <div class="video-card" onclick="playMe(this, './images/videos/vd_3.mp4')">
+      <img src="./images/videos/images__3.avif" class="video-poster">
+      <div class="play-btn">
+        <svg viewBox="0 0 24 24">
+          <path d="M8 5v14l11-7z" />
+        </svg>
+      </div>
+      <p class="video-text">Kursning maxsus metodi orqali <br> rus tilida bemalol gaplashish <br> darajasigan tez
+        chiqdim. Rahmat</p>
+      <video class="card-video" playsinline muted></video>
+    </div>
+
+    <button class="hero__btn" id="open"><img src="./images/hero/submit.svg" alt="submit" width="19" height="26"
+        loading="lazy" decoding="async">Ro’yxatdan o’tish</button>
+  </div>
+
+  
+
   <div id="registrationModal" class="homeModal" style="display: none">
     <div class="homeModalOverlay"></div>
     <div class="homeFormContainer">
@@ -165,6 +249,8 @@
   <script defer src="./js/phoneFormatter.js"></script>
   <script defer src="./js/thankYou.js"></script>
   <script defer src="./js/format.js"></script>
+  <script defer src="./js/video.js"></script>
+  <script defer src="./js/result.js"></script>
 
 </body>
 
