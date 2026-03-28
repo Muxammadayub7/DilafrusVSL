@@ -18,286 +18,8 @@
 	src: url(../fonts/BebasNeue/BebasNeueRegular.woff2);
 	font-display: swap;
 }
-
-.homeModal,
-.homeModalOverlay {
-	position: fixed;
-	top: 0;
-	height: 100vh;
-	width: 100%;
-	left: 0;
-}
-.homeModal {
-	z-index: 30;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-}
-.homeModalOverlay {
-	background-color: rgba(0, 0, 0, 0.3);
-	backdrop-filter: blur(5px);
-}
-.homeFormContainer {
-	position: relative;
-	z-index: 30;
-	background-color: #fff;
-	color: #000;
-	border-radius: 8px;
-	padding: 20px 40px 40px;
-	width: 100%;
-	max-width: 520px;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-	margin: 0 20px;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-.homeFormTop {
-	display: flex;
-	justify-content: space-between;
-}
-.homeFormTopTitle {
-	font-family: Inter, sans-serif;
-	font-size: clamp(21px, 6.6vw, 24px);
-	margin: 0 0 20px;
-	color: #000;
-	font-weight: 600;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-}
-.closeButton {
-	background: 0 0;
-	border: none;
-	cursor: pointer;
-	padding: 4px;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	color: #000;
-}
-.homeFormErrorText {
-	color: #e53e3e;
-	margin-bottom: 12px;
-	font-size: 14px;
-	font-family:
-		system-ui,
-		-apple-system,
-		BlinkMacSystemFont,
-		'Segoe UI',
-		sans-serif;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-.HomeFormRowInput,
-.HomeFormRowLabel {
-	font-family:
-		system-ui,
-		-apple-system,
-		BlinkMacSystemFont,
-		'Segoe UI',
-		sans-serif;
-	font-size: 18px;
-}
-.HomeFormRow {
-	margin-bottom: 20px;
-}
-.HomeFormRowLabel {
-	display: block;
-	margin-bottom: 6px;
-	color: #000;
-}
-.HomeFormRowInput {
-	width: 100%;
-	padding: 10px 16px;
-	border: 1px solid #c9c9c9;
-	min-height: 48px;
-	background-color: #f3f7f8;
-	border-radius: 6px;
-	font-weight: 400;
-	outline: 0;
-	height: 50px;
-	transition: border-color 0.2s;
-}
-.HomeFormRowInput:focus {
-	border-color: #e71f1f;
-}
-.HomeFormRowInput::placeholder {
-	color: #aaa;
-}
-.HomeFormBtn {
-	font-family: sans-serif;
-	height: 60px;
-	width: 100%;
-	cursor: pointer;
-	border-radius: 10px;
-	background-color: #e71f1f;
-	transition: 0.3s;
-	font-weight: 700;
-	font-size: 28px;
-	color: white;
-	text-transform: uppercase;
-	border: none;
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.phone-input-container {
-	display: flex;
-	align-items: center;
-	position: relative;
-	border: 1px solid #c9c9c9;
-	background-color: transparent;
-	border-radius: 6px;
-}
-.phone-input-container:focus {
-	border-color: #e71f1f;
-}
-.selected-code {
-	display: flex;
-	margin-left: 10px;
-}
-.country-selector {
-	position: relative;
-	margin-right: 10px;
-}
-.selected-country {
-	display: flex;
-	align-items: center;
-	padding: 10px;
-	padding-right: 0;
-	border-radius: 6px;
-	cursor: pointer;
-	min-height: 50px;
-	font-family: sans-serif !important;
-	font-size: 18px;
-	font-weight: 400 !important;
-	min-width: max-content;
-	border: none;
-	background-color: transparent;
-}
-.country-dropdown {
-	position: absolute;
-	top: 110%;
-	left: 0;
-	width: 100%;
-	background-color: #fff;
-	border: 1px solid #c9c9c9;
-	border-radius: 6px;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-	z-index: 40;
-	max-height: 200px;
-	overflow-y: auto;
-	font-family: sans-serif !important;
-	font-weight: 400 !important;
-}
-.country-option {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px;
-	cursor: pointer;
-	font-family: sans-serif;
-	font-weight: 400 !important;
-}
-.country-option:hover {
-	background-color: #f3f7f8;
-}
-.country-option.selected {
-	background-color: #e6f0fa;
-}
-@media screen and (max-width: 768px) {
-	.homeFormContainer {
-		max-width: 100%;
-		padding: 80px 20px 20px;
-		margin: 0;
-		border-radius: 6px;
-		height: 100vh;
-	}
-	.homeFormTopTitle {
-		text-align: center;
-		max-width: 408px;
-		margin-left: auto;
-		margin-right: auto;
-		font-weight: 700;
-		margin-bottom: 15px;
-	}
-	.homeFormTop {
-		flex-direction: column;
-		align-items: flex-start;
-	}
-	.closeButton {
-		width: 100%;
-		height: 50px;
-		background-color: #000;
-		color: #fff;
-		padding-right: 20px;
-		top: 0;
-		left: 0;
-		justify-content: end;
-	}
-	.homeFormErrorText {
-		font-size: 12px;
-		margin-bottom: 8px;
-	}
-	.HomeFormRowLabel {
-		margin-bottom: 6px;
-	}
-	.HomeFormRowInput {
-		padding: 0 12px;
-		min-height: 40px;
-		background-color: transparent;
-	}
-	.HomeFormRowInput::placeholder {
-		color: #a3a3a3;
-	}
-	.HomeFormBtn {
-		font-size: 18px;
-		font-weight: 700;
-		margin-top: 24px;
-	}
-}
-@media screen and (max-width: 480px) {
-	.homeFormContainer {
-		max-width: 100%;
-		padding: 80px 20px 20px;
-		margin: 0;
-		border-radius: 6px;
-		height: 100vh;
-	}
-	.homeFormTopTitle {
-		text-align: center;
-		margin: 0 auto 15px;
-	}
-	.homeFormErrorText {
-		font-size: 12px;
-		margin-bottom: 8px;
-	}
-	.HomeFormRowLabel {
-		margin-bottom: 6px;
-	}
-	.HomeFormRowInput {
-		padding: 0 12px;
-		min-height: 40px;
-		background-color: transparent;
-		border-radius: 10px;
-	}
-	.HomeFormRowInput::placeholder {
-		color: #a3a3a3;
-	}
-	.HomeFormBtn {
-		font-size: 16px;
-		padding: 10px 0;
-		margin-top: 24px;
-		height: 50px;
-	}
-}
-
+.homeModal,.homeModalOverlay{position:fixed;top:0;height:100vh;width:100%;left:0}.homeModal{z-index:30;justify-content:center;align-items:center;display:flex}.homeModalOverlay{background-color:rgb(0 0 0 / .3);backdrop-filter:blur(5px)}.homeFormContainer{position:relative;z-index:30;background-color:#fff;color:#000;border-radius:8px;padding:20px 40px 40px;width:100%;max-width:520px;box-shadow:0 4px 12px rgb(0 0 0 / .1);margin:0 20px;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%)}.homeFormTop{display:flex;justify-content:space-between}.homeFormTopTitle{font-family:Inter,sans-serif;font-size:clamp(21px, 6.6vw, 24px);margin:0 0 20px;color:#000;font-weight:600;text-align:center;margin-left:auto;margin-right:auto}.closeButton{background:0 0;border:none;cursor:pointer;padding:4px;justify-content:center;align-items:center;display:flex;position:absolute;top:20px;right:20px;color:#000}.homeFormErrorText{color:#e53e3e;margin-bottom:12px;font-size:14px;font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;padding-top:5px;padding-bottom:5px}.HomeFormRowInput,.HomeFormRowLabel{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:18px}.HomeFormRow{margin-bottom:20px}.HomeFormRowLabel{display:block;margin-bottom:6px;color:#000}.HomeFormRowInput{width:100%;padding:10px 16px;border:1px solid #c9c9c9;min-height:48px;background-color:#f3f7f8;border-radius:6px;font-weight:400;outline:0;height:50px;transition:border-color 0.2s}.HomeFormRowInput:focus{border-color:#e71f1f}.HomeFormRowInput::placeholder{color:#aaa}.HomeFormBtn{font-family:sans-serif;height:60px;width:100%;cursor:pointer;border-radius:10px;background-color:#e71f1f;transition:0.3s;font-weight:700;font-size:28px;color:#fff;text-transform:uppercase;border:none;position:relative;display:flex;align-items:center;justify-content:center}.phone-input-container{display:flex;align-items:center;position:relative;border:1px solid #c9c9c9;background-color:#fff0;border-radius:6px}.phone-input-container:focus{border-color:#e71f1f}.selected-code{display:flex;margin-left:10px}.country-selector{position:relative;margin-right:10px}.selected-country{display:flex;align-items:center;padding:10px;padding-right:0;border-radius:6px;cursor:pointer;min-height:50px;font-family:sans-serif!important;font-size:18px;font-weight:400!important;min-width:max-content;border:none;background-color:#fff0}.country-dropdown{position:absolute;top:110%;left:0;width:100%;background-color:#fff;border:1px solid #c9c9c9;border-radius:6px;box-shadow:0 4px 12px rgb(0 0 0 / .1);z-index:40;max-height:200px;overflow-y:auto;font-family:sans-serif!important;font-weight:400!important}.country-option{display:flex;justify-content:space-between;align-items:center;padding:10px;cursor:pointer;font-family:sans-serif;font-weight:400!important}.country-option:hover{background-color:#f3f7f8}.country-option.selected{background-color:#e6f0fa}@media screen and (max-width:768px){.homeFormContainer{max-width:100%;padding:80px 20px 20px;margin:0;border-radius:6px;height:100vh}.homeFormTopTitle{text-align:center;max-width:408px;margin-left:auto;margin-right:auto;font-weight:700;margin-bottom:15px}.homeFormTop{flex-direction:column;align-items:flex-start}.closeButton{width:100%;height:50px;background-color:#000;color:#fff;padding-right:20px;top:0;left:0;justify-content:end}.homeFormErrorText{font-size:12px;margin-bottom:8px}.HomeFormRowLabel{margin-bottom:6px}.HomeFormRowInput{padding:0 12px;min-height:40px;background-color:#fff0}.HomeFormRowInput::placeholder{color:#a3a3a3}.HomeFormBtn{font-size:18px;font-weight:700;margin-top:24px}}@media screen and (max-width:480px){.homeFormContainer{max-width:100%;padding:80px 20px 20px;margin:0;border-radius:6px;height:100vh}.homeFormTopTitle{text-align:center;margin:0 auto 15px}.homeFormErrorText{font-size:12px;margin-bottom:8px}.HomeFormRowLabel{margin-bottom:6px}.HomeFormRowInput{padding:0 12px;min-height:40px;background-color:#fff0;border-radius:10px}.HomeFormRowInput::placeholder{color:#a3a3a3}.HomeFormBtn{font-size:16px;padding:10px 0;margin-top:24px;height:50px}}
+/* 
 * {
 	margin: 0;
 	padding: 0;
@@ -388,7 +110,7 @@ body {
 .col__title {
 	font-family: BebasNeue;
 	font-weight: 400;
-	font-size: clamp(24px, 7vw, 30px);
+	font-size: clamp(16px, 7vw, 30px);
 	line-height: 120%;
 	text-align: center;
 	text-transform: uppercase;
@@ -441,7 +163,7 @@ body {
 .form__title {
 	font-family: BebasNeue;
 	font-weight: 400;
-	font-size: 32px;
+	font-size: clamp(20px, 4vw, 30px);
 	line-height: 125%;
 	text-align: center;
 	color: black;
@@ -593,10 +315,9 @@ body {
 	box-shadow:
 		0px 4px 0px 0px #8c0000,
 		inset 0px 4px 4px 0px rgba(255, 255, 255, 0.25);
-		max-width: 350px;
-		width: 100%;
+	max-width: 350px;
+	width: 100%;
 }
-
 .learn {
 	padding-top: 15px;
 	padding-bottom: 35px;
@@ -611,8 +332,7 @@ body {
 	margin-bottom: 5px;
 }
 .row__learn {
-	/* Ichidagilarni tepadan tekislaydi */
-	width: fit-content; /* Faqat ichidagi narsaga yetadigan kenglik oladi */
+	width: fit-content; 
 	border: 2px solid transparent;
 	background-image:
 		linear-gradient(white, white),
@@ -629,7 +349,7 @@ body {
 	width: 100%;
 	height: auto;
 }
-.col__title {
+.learn__title {
 	font-family: GilroyBold;
 	font-weight: 400;
 	font-size: clamp(20px, 4vw, 22px);
@@ -663,7 +383,6 @@ body {
 	line-height: 130%;
 }
 
-/* Asosiy konteyner 390px */
 .video-section {
 	max-width: 390px;
 	width: 100%;
@@ -699,14 +418,12 @@ body {
 	border-radius: 30px;
 }
 
-/* Poster rasmi */
 .video-poster {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
 
-/* Binafsha rangli Play tugmasi */
 .play-btn {
 	position: absolute;
 	top: 50%;
@@ -714,7 +431,7 @@ body {
 	transform: translate(-50%, -50%);
 	width: 60px;
 	height: 60px;
-	background-color: #b45cfa; /* Rasmga mos rang */
+	background-color: #b45cfa;
 	border-radius: 50%;
 	display: flex;
 	justify-content: center;
@@ -728,7 +445,6 @@ body {
 	fill: white;
 }
 
-/* Poster ustidagi matn */
 .video-text {
 	font-family: GilroyMedium;
 	font-weight: 400;
@@ -740,7 +456,7 @@ body {
 	left: 23px;
 	right: 23px;
 	color: white;
-	background-color: rgba(0, 0, 0, 0.6); /* Matn ko'rinishi uchun soya */
+	background-color: rgba(0, 0, 0, 0.6); 
 	padding: 10px;
 	margin: 0;
 	line-height: 1.4;
@@ -774,7 +490,7 @@ body {
 	z-index: 10;
 }
 
-/* Video qo'yilganda klass orqali ko'rsatish */
+
 .video-card.playing .card-video {
 	display: block !important;
 	width: 100%;
@@ -813,31 +529,31 @@ body {
 	margin-bottom: 25px;
 }
 
-/* Skrinshotdagi och binafsha fonli karta */
 .result__card {
-  background-color: #e2c2ff;
-  border-radius: 40px;
-  /* Yonlardagi 45px ni saqlaymiz, lekin tepa-pastni 12px ga qulflaymiz */
-  padding: 12px clamp(15px, 5vw, 45px); 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* Elementlar orasi figmadagidek qat'iy 12px-15px bo'lishi uchun */
-  gap: 12px; 
-  width: 100%;
-  box-sizing: border-box; /* Padding ichkariga qarab hisoblanishi uchun shart! */
+	background-color: #e2c2ff;
+	border-radius: 40px;
+	padding: 12px clamp(15px, 5vw, 30px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+	width: 100%;
+	max-width: 340px;
+	width: 100%;
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .result__video-wrapper {
-  position: relative;
-  /* Figma o'lchami: 196x196 */
-  width: 196px;
-  height: 196px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 3px solid #8f0ef4;
-  background: #000;
-  flex-shrink: 0; /* Video qisqarib ketmasligi uchun */
+	position: relative;
+	width: 196px;
+	height: 196px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 3px solid #8f0ef4;
+	background: #000;
+	flex-shrink: 0;
 }
 
 .result__poster,
@@ -873,7 +589,6 @@ body {
 	fill: white;
 }
 
-/* Matn: binafsha fon ustidagi yozuv */
 .result__text {
 	font-family: GilroyMedium;
 	background: rgba(122, 105, 145, 0.8);
@@ -885,7 +600,6 @@ body {
 	max-width: 90%;
 }
 
-/* Qizil tugma */
 .result__button {
 	background: linear-gradient(180deg, #ff3d3d 0%, #d71616 100%);
 	color: white;
@@ -902,11 +616,10 @@ body {
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Video o'ynaganda */
 .result__card.playing .result__video {
 	display: block;
 }
 .result__card.playing .result__poster,
 .result__card.playing .result__play-btn {
 	display: none;
-}
+} */
