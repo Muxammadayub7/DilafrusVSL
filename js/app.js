@@ -101,8 +101,6 @@ const interval = setInterval(() => {
 
   if (time === 0) {
     clearInterval(interval);
-    // optional: do something when finished
-    // alert("Time's up!");
     return;
   }
 
