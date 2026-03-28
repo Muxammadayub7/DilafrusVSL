@@ -325,3 +325,22 @@ document.addEventListener("DOMContentLoaded", () => {
     formatMap: g,     // must exist
   });
 });
+
+// Dropdownni ochish mantiqi
+const dropdownBtn = document.getElementById("selectedCountry");
+const dropdownMenu = document.getElementById("countryDropdown");
+
+dropdownBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  const isVisible = dropdownMenu.style.display === "block";
+  dropdownMenu.style.display = isVisible ? "none" : "block";
+  
+  if (!isVisible) {
+    renderDropdownItems(); // Ro'yxatni shakllantirish funksiyasi
+  }
+});
+
+// Tashqariga bossa yopish
+document.addEventListener("click", () => {
+  dropdownMenu.style.display = "none";
+});

@@ -54,13 +54,16 @@
           <div>
             <label for="" class="label">Telefon raqamingiz</label>
             <div class="form__bottom">
-              <div class="form__bottom__col">
-                <p class="form__bottom__col__title">+998</p>
+              <div class="form__bottom__col" id="selectedCountry">
+                <p class="form__bottom__col__title" id="selectedCountryCodeText">+998</p>
                 <img src="./images/hero/arrow__bottom.svg" alt="arrow" class="arrow__btn" width="12" height="7"
                   loading="lazy" decoding="async">
+
+                <div id="countryDropdown" class="country-dropdown"></div>
               </div>
-              <input type="tel" placeholder="00 000-00-00" class="input__number" id="phone" name="phone"
-                inputmode="numeric" placeholder="88 888 88 88" autocomplete="tel">
+
+              <input type="tel" class="input__number" id="phone" name="phone" inputmode="numeric"
+                placeholder="00 000-00-00" autocomplete="tel">
             </div>
           </div>
           <button class="hero__btn" id="open"><img src="./images/hero/submit.svg" alt="submit" width="19" height="26"
@@ -80,25 +83,26 @@
     <div class="learn__container container">
       <h2 class="learn__title">Kursda nimalarni <br>
         o’rganasiz?</h2>
-      <div class="row">
+      <div class="row__learn">
         <img src="./images/learning/img_1.avif" alt="img_1" class="learn__img" width="322" height="192" loading="lazy"
           decoding="async">
-        <h3 class="row__title">oldingi siz:</h3>
+        <h3 class="col__title">oldingi siz:</h3>
         <div class="learn__cols">
           <p class="cols__text"><span>1.</span> YouTubeda darslar ko'rib, <br> rus tilini <b>o'rgana olmagansiz</b></p>
           <p class="cols__text"><span>2.</span> Rus tilida gapirish boshlasangiz, <br> <b>duduqlanib, tutilib
             </b>qolasiz</p>
           <p class="cols__text"><span>3.</span> Erkin rus tilida gapira olmaganingiz <br> uchun o'zingizni
-            <b>kamsitilgandek his qilasiz</b> </p>
+            <b>kamsitilgandek his qilasiz</b>
+          </p>
           <p class="cols__text"><span>4.</span> So'z <b>yodlaysiz ammo</b> razgovorda <br> ularni to'g'ri ishlatolmaysiz
           </p>
           <p class="cols__text"><span>5.</span> Bepul darslarda qatnashib, <br> <b>sezilarli natija</b> ko'rgamansiz</p>
         </div>
       </div>
-      <div class="row">
+      <div class="row__learn">
         <img src="./images/learning/img_2.avif" alt="img_2" class="learn__img" width="322" height="192" loading="lazy"
           decoding="async">
-        <h3 class="row__title">kursimdan keyingi siz:</h3>
+        <h3 class="col__title">kursimdan keyingi siz:</h3>
         <div class="learn__cols">
           <p class="cols__text"><span>1.</span> Ko'chada, <b>ishda, o'qishda har qanday <br> joyda</b> bemalol rus
             tilida suhbatlasha olasiz</p>
